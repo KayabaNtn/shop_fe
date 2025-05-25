@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#__nuxt {
+  @apply bg-white;
+  @apply text-gray-900;
+}

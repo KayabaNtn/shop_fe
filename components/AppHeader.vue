@@ -1,18 +1,18 @@
 <template>
   <div class="h-[60px]">
-    <div class="header-destop flex flex-nowrap justify-between bg-white h-full">
+    <div class="header-desktop flex flex-nowrap justify-between h-full">
       <img
         class="w-40 h-full"
         src="https://mitomo.com.vn/wp-content/uploads/2022/08/logo-new.png"
         alt=""
       >
-      <div class="flex flex-nowrap sm:mr-10">
+      <div class="flex flex-nowrap lg:mr-10">
         <Menubar
           :model="menuItems"
-          class="border-none rounded-none h-full menubar-link-responsive order-3 ml-3 sm:order-1 sm:mr-3"
+          class="header-menu border-none rounded-none h-full menubar-link-responsive order-3 ml-3 lg:order-1 lg:mr-3"
         />
-        <i class="pi pi-search flex items-center justify-center text-black w-10 h-10 mt-[10px] text-xl mx-3 order-1 hover:cursor-pointer sm:order-2"></i>
-        <OverlayBadge class="header-badge order-2 sm:order-3" value="2" size="small">
+        <i class="pi pi-search flex items-center justify-center text-black w-10 h-10 mt-[10px] text-xl mx-3 order-1 hover:cursor-pointer lg:order-2"></i>
+        <OverlayBadge class="header-badge order-2 lg:order-3" value="2" size="small">
           <i class="pi pi-shopping-bag flex items-center justify-center text-black w-10 h-10 mt-[10px] text-xl mx-1 hover:cursor-pointer"></i>
         </OverlayBadge>
       </div>
@@ -192,19 +192,19 @@ export default {
 </script>
 
 <style>
-.header-menu
-  > .p-megamenu-root-list
-  > .p-megamenu-item
-  > .p-megamenu-item-content
-  > .p-megamenu-item-link {
-  padding: 20px !important;
+@media screen and (min-width: 1100px) {
+  .header-menu
+    > .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content > .p-menubar-item-link {
+    padding: 15px !important;
+  }
 }
 .header-badge > .p-badge-circle {
   color: black;
   font-size: 1em;
   transform: translate(-5%, 45%) !important;
 }
-@media (min-width: 430px) and (max-width: 767px) {
+/* @media (min-width: 430px) and (max-width: 767px) { */
+@media (min-width: 430px) and (max-width: 1023px) {
   .menubar-link-responsive.p-menubar-mobile .p-menubar-root-list {
     width: 100vw !important;
     left: calc(-100vw + 100%) !important;
