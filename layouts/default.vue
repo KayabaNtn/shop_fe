@@ -3,5 +3,6 @@
     <AppHeader />
     <slot />
     <AppFooter />
+    <CopyRight />
   </div>
 </template>
