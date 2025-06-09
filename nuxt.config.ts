@@ -2,11 +2,8 @@
 import Aura from '@primeuix/themes/aura'
 
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@primevue/nuxt-module',
-    // '@nuxt/eslint',
-  ],
+  modules: ['@nuxtjs/tailwindcss', // '@nuxt/eslint',
+  '@primevue/nuxt-module', '@pinia/nuxt'],
   css: [
     'primeicons/primeicons.css',
     '~/assets/css/tailwind.css'

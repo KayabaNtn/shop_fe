@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.4.1",
+    "@pinia/nuxt": "0.11.1",
     "@primeuix/themes": "^1.1.1",
     "@primevue/forms": "^4.3.4",
     "eslint": "^9.0.0",
@@ -26,5 +27,6 @@
     "@primevue/nuxt-module": "^4.3.4",
     "sass-loader": "^16.0.5",
     "typescript": "^5.8.3"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
